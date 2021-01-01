@@ -48,11 +48,26 @@
           </nav>
         
         <img id="homeimg" src="exercise2.jpg" alt="Exercise" class="img-fluid">
+        <form action="action_page.php" method="post" id="Login"></form>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+        
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
         <div class="container" id="para">
-            <h1 id="test">We provide the best fitness services</h1>
+            <h1 id="test">We provide the awesome fitness services</h1>
             <p>Come and join us!</p>
         </div>
-        
-          
+        <script src="https://cdn.jsdelivr.net/npm/zl-fetch"></script>
+        <script src="login.js" async defer></script>
+                 
     </body>
 </html>

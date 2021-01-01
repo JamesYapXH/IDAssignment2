@@ -13,5 +13,17 @@
 }
 
 #background{
-    background-color: black;
+    background-color:darkslategrey;
+}
+
+#gender{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 100px;
+}
+
+#Login{
+    padding-top: 50px;
+    text-align: center;
 }

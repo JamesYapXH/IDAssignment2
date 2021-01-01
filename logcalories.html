@@ -43,12 +43,21 @@
               </li>
             </ul>
           </nav>
+          <div class="container" id="gender">
+          <form id="genderForm" name="genderForm">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="button" id="btn" value="Submit">
+          </form>
+          </div>
           <div class="container" id="caloriegoals">
-            <h1>Your calorie goal: </h1>
+            <h1 id="calogoal">Your calorie goal: </h1>
             <form id="submit_form" name="submit_form">
                 <label for="caloriescon">Calories consumed today: </label><br>
                 <input type="text" id="caloriesconsumed" name="caloriesconsumed"><br>
-                <input type="submit" value="calorieInput" id="calorieInput">
+                <input type="submit" value="Submit" id="calorieInput">
             </form>
             <p>You have consumed 999 calories</p>
             <img src="healthyplate.png" alt="My healthy plate">
