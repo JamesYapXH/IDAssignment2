@@ -1,4 +1,5 @@
 
+
 let user = function(uname,pswd,gendr){
     this.username = uname;
     this.password = pswd;
@@ -19,24 +20,22 @@ const btn = document.querySelector('#signbtn');
                 }
             }
 
-            
-            for (var i = 0; i < localStorage.length; i++){
-                console.log("working...")
-                if (newusername === JSON.parse(localStorage.getItem(localStorage.key(i)))){
-                    alert("This username already exist! Please try again!");
+             
+            Object.keys(localStorage).forEach((key) => {
+                if (newusername == key){
                     isUser = true;
-                    break;
+                    alert("This user already exist! Please refresh and try again.");
                 }
-            }
+               });
             
                 
 
             
             if (isUser == false){
                 if(selectedValue == "male"){
-                    let newuser = new user(newusername,newpassword,selectedValue);
-                    localStorage.setItem(newusername,JSON.stringify(newuser));
-                    alert("You have successfully signed up!");
+                let newuser = new user(newusername,newpassword,selectedValue);
+                localStorage.setItem(newusername,JSON.stringify(newuser));
+                alert("You have successfully signed up!");
                 }
     
                else if(selectedValue == "female"){
