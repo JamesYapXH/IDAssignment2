@@ -1,9 +1,10 @@
 
 
-let user = function(uname,pswd,gendr){
+let user = function(uname,pswd,gendr,calo){
     this.username = uname;
     this.password = pswd;
     this.gender = gendr;
+    this.calories = calo;
 }
 const btn = document.querySelector('#signbtn');
         // handle click button
@@ -33,13 +34,13 @@ const btn = document.querySelector('#signbtn');
             
             if (isUser == false){
                 if(selectedValue == "male"){
-                let newuser = new user(newusername,newpassword,selectedValue);
+                let newuser = new user(newusername,newpassword,selectedValue,2300);
                 localStorage.setItem(newusername,JSON.stringify(newuser));
                 alert("You have successfully signed up!");
                 }
     
                else if(selectedValue == "female"){
-                let newuser = new user(newusername,newpassword,selectedValue);
+                let newuser = new user(newusername,newpassword,selectedValue,1900);
                 localStorage.setItem(newusername,JSON.stringify(newuser));
                 alert("You have successfully signed up!");
                }

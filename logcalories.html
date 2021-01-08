@@ -39,27 +39,19 @@
                 <a class="nav-link" href="logcalories.html">Log Calories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Workout Sets</a>
+                <a class="nav-link" href="weather.html">Weather</a>
               </li>
             </ul>
           </nav>
-          <div class="container" id="gender">
-          <form id="genderForm" name="genderForm">
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <input type="button" id="btn" value="Submit">
-          </form>
-          </div>
+         
           <div class="container" id="caloriegoals">
-            <h1 id="calogoal">Your calorie goal: </h1>
+            <h1 id="calogoal">Your calorie goal: <span class="calorienum"></span> </h1>
             <form id="submit_form" name="submit_form">
-                <label for="caloriescon">Calories consumed today: </label><br>
-                <input type="text" id="caloriesconsumed" name="caloriesconsumed"><br>
-                <input type="submit" value="Submit" id="calorieInput">
+                <label id="caloriesCon" for="caloriescon">Calories consumed today: </label><br>
+                <input type="text" id="caloriesConsumed" name="caloriesconsumed"><br>
+                <input type="button" value="Submit" id="calorieInput">
             </form>
-            <p>You have consumed 999 calories</p>
+            <p>You have consumed <span class="consumedCalories">0</span>  calories in the last meal.</p>
             <img src="healthyplate.png" alt="My healthy plate">
           </div>
         <script src="script.js" async defer></script>

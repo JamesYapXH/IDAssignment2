@@ -1,21 +1,29 @@
-const btn = document.querySelector('#btn');
+if(sessionStorage.getItem("loggedIn")== "true"){
+    let userObj = JSON.parse(sessionStorage.getItem("currentUser"));
+    console.log(userObj);
+
+    $(".calorienum").text(userObj.calories);
+    console.log(userObj.calories);
+    const btn = document.querySelector('#calorieInput');
         // handle click button
         btn.onclick = function () {
-            const rbs = document.querySelectorAll('input[name="gender"]');
-            let selectedValue;
-            for (const rb of rbs) {
-                if (rb.checked) {
-                    selectedValue = rb.value;
-                    break;
-                }
-            }
-            if(selectedValue == "male"){
-                document.getElementById("calogoal").innerHTML = "Your calorie goal: 2300 calories"
-            }
+            console.log("test");
+            let userInput = document.getElementById("caloriesConsumed").value;
+            console.log(userObj.calories);
+            console.log(userInput);
+            let newValue = Number(userObj.calories) - Number(userInput);
+            console.log(newValue);
+            userObj.calories = newValue;
+            let saveObj = JSON.stringify(userObj);
+            sessionStorage.setItem("currentUser",saveObj);
+            localStorage.setItem(userObj.username,saveObj);
+            $(".calorienum").text(newValue);
+            $(".consumedCalories").text(userInput);
+        }
 
-           else if(selectedValue == "female"){
-                document.getElementById("calogoal").innerHTML = "Your calorie goal: 1900 calories"
-           }
-                
-            
-        };
+}
+
+else{
+    alert("Please login first!");
+}
+
