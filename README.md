@@ -31,11 +31,17 @@ Deployment:
 
 Credits:
 Bootstrap knowledge and basics are taken from https://www.w3schools.com/bootstrap/
+
 nav bar design and sign up page also taken from https://www.w3schools.com/bootstrap/ and https://www.w3schools.com/howto/howto_css_signup_form.asp
+
 API and weather page formats taken from https://openweathermap.org/current
+
 Images:
+
 Healthy plate in logcalories.html taken from https://www.healthhub.sg/programmes/55/my-healthy-plate
+
 workout image in index.html taken from https://wallpapercave.com/workout-wallpapers
+
 park image in weather.html taken from https://wallpapercave.com/park-in-the-fall-wallpapers
 
 Credits to my dear class mates that have helped validate and fix cerain errors that I struggled with, mainly Li Min, Jie Sheng and Ryan.
