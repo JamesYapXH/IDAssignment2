@@ -5,19 +5,28 @@ To create a fitness app that benefits the user in terms of hitting their calorie
 
 Features:
 -Login and Signup feature, this is so that users data will be stored and can be re-used and updated. This is done using javascript,localstorage and session storage. Users will have to login in order to access certain features.
+
 -Calorie Tracker feature, depending on the users gender, they will be given a reccomended calorie goal, the user can log their meals and their calorie worth which will be deducted from the goal.
+
 -Weather feature, the user is able to search anywhere in the world and retrieve the weather data, this is to let the users plan their workout for exmaple a run in the park and to see if the weather conditions align.
 
 Technologies:
+
 -used jquery to update html
+
 -used bootstrap to set up nav bar and wrap content in containers, this makes the website naturally responsive
+
 -used API from https://openweathermap.org/current to program the weather app
+
 -used local storage and session storage to store data and program login function.
 
 Deployment:
 1. You will have to register for a github account and clone this project using this link https://github.com/JamesYapXH/IDAssignment2.git
+
 2.This what the website will currently look like https://jamesyapxh.github.io/IDAssignment2/
+
 3.You can add your own attributes and data by editing the class in signup.js
+
 4.images can be changed by renaming the img tags in the HTML codes
 
 Credits:
