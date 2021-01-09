@@ -1,0 +1,38 @@
+#homeimg{
+    width: 2000px;
+    height:700px;
+}
+#para{
+    text-align: center;
+}
+
+#caloriegoals{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#background{
+    background-color:darkslategrey;
+}
+
+#gender{
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding-top: 100px;
+}
+
+#Login{
+    padding-top: 50px;
+    padding-left: 400px;
+    
+}
+
+#loginform{
+    margin-right: 160px;
+}
+
+
+
+
